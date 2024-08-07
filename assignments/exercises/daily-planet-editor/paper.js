@@ -9,7 +9,7 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+const enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 
 function findWinner (isThereKryptonite, enemyName) {
     if (!isThereKryptonite) {
@@ -19,7 +19,7 @@ function findWinner (isThereKryptonite, enemyName) {
     }
 }
 
-for (var i = 0; i < enemies.length; i++) {
+for (let i = 0; i < enemies.length; i++) {
     var isThereKryptonite = true;
     if (i % 2 === 0) {
         isThereKryptonite = true;
@@ -30,14 +30,14 @@ for (var i = 0; i < enemies.length; i++) {
 }
 
 function loisLaneAttractionRating () {
-    // 1 is not at all attracted, 10 is "super" attracted...
+    //Random number generator 1-10 (inclusive) (least - most attractive)
     return Math.floor((Math.random() * 10) + 1);
 }
 
 console.log(loisLaneAttractionRating());
 
-var clarkKent = true;
-var superman = false;
+let clarkKent = true;
+let superman = false;
 
 while (clarkKent) {
     console.log("I'm just a nerdy columnist");
