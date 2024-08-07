@@ -20,7 +20,6 @@ function findWinner (isThereKryptonite, enemyName) {
 }
 
 for (let i = 0; i < enemies.length; i++) {
-    var isThereKryptonite = true;
     if (i % 2 === 0) {
         isThereKryptonite = true;
     } else {
@@ -30,7 +29,7 @@ for (let i = 0; i < enemies.length; i++) {
 }
 
 function loisLaneAttractionRating () {
-    //Random number generator 1-10 (inclusive) (least - most attractive)
+    //Generate random number 1 - 10(inclusive) (least - most attractive)
     return Math.floor((Math.random() * 10) + 1);
 }
 
