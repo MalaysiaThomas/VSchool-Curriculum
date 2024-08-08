@@ -1,9 +1,7 @@
 let square = document.getElementById("shape");
 
-//Square default background color set to orange in styles.css
-
 //Turns square blue on hover
-square.addEventListener("mousemove", function() {
+square.addEventListener("mouseover", function() {
     square.style.backgroundColor = "blue"
 })
 
@@ -24,6 +22,11 @@ square.addEventListener("mouseup", function() {
 //Turns square green when double-clicked
 square.addEventListener("dblclick", function() {
     square.style.backgroundColor = "green"
+})
+
+//Turns square orange on scroll 
+document.addEventListener("wheel", function() {
+    square.style.backgroundColor = "orange"
 })
 
 //Colors square based on key pressed
