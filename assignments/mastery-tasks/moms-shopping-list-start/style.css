@@ -8,10 +8,6 @@
     margin: auto;
 }
 
-#add-item {
-    border: 1px solid black;
-}
-
 .input {
     width: 100%;
     padding: 12px 20px;
@@ -29,6 +25,7 @@
 #list {
     flex-direction: column;
     display: flex;
+    padding: 0 40px;
 }
 
 #list > li{
@@ -39,4 +36,8 @@
 #list div {
     margin-bottom: 10px;
     text-align: center;
+}
+
+button {
+    margin: 5px;
 }
