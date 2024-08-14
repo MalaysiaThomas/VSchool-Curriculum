@@ -1,3 +1,6 @@
+//PART 1
+
+
 //Loop through the following array and count how many "computers" there are. Log the final count:
 
 var officeItems = [
@@ -111,3 +114,47 @@ if (sum % 2 === 0) {
 } else {
     console.log("The light is on")
 }
+
+
+//PART 2
+
+
+//Loop through the following array, and log to the console "hooray" for every party there is.
+var eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
+
+for(i = 0; i < eventsAtWork.length; i++) {
+  if(eventsAtWork[i] === "party") {
+    console.log("hooray")
+  }
+}
+
+//Loop through the following array, and count how many "trues" there are.
+var booleans = [true, true, false, true, false, false, false]
+let trueCount = 0
+for(i = 0; i < booleans.length; i++) {
+  if (booleans[i] === true) {
+    trueCount++
+  }
+}
+console.log(trueCount)
+
+//Add an isAdmin property to each of the users in this array.
+var users = [
+  {
+    name: "Sophie",
+    age: 12
+  },
+  {
+    name: "Larry",
+    age: 32
+  },
+  {
+    name: "Cathy",
+    age: 40
+  }
+]
+
+for(i = 0; i < users.length; i++) {
+  users[i].isAdmin = ""
+}
+console.log(users)
