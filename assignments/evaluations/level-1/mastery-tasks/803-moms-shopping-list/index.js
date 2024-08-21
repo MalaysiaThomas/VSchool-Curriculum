@@ -50,7 +50,7 @@ const addButtons = (newItem) => {
             //Set placeholder and value of input to original todo item
             input.placeholder = itemContent;
             input.value = itemContent;
-            //Remove <div> element from previous sibling
+            //Remove <div> element's content from previous sibling
             todoItem.innerHTML = "";
             //Add input element to prevous sibling 
             todoItem.append(input);

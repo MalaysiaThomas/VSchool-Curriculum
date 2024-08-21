@@ -47,6 +47,7 @@ let leftMessages = document.getElementsByClassName("left")
 
 dropdown.addEventListener("change", function() {
     let selection = dropdown.value
+    
     if (selection === "theme-one") {
         for (let i = 0; i < rightMessages.length; i++) {
             rightMessages[i].style.backgroundColor = ""

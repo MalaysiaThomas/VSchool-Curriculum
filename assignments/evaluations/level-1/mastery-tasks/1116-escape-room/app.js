@@ -20,6 +20,7 @@ let foundKeyCount = 0
 while(true) {
     //Stores index of player's chosen option
     const chooseOption = readline.keyInSelect(options, "Choose an option: ")
+    
     if(chooseOption === options.indexOf(findTheKey)) {
         foundKeyCount++
         console.log("\nCongratulations! You found the key!")
